@@ -12,4 +12,26 @@ require('./bootstrap');
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
-require('./components/App');
+ import React from "react";
+ import ReactDOM from "react-dom";
+ import Root from "./Root";
+ import { BrowserRouter } from "react-router-dom";
+
+
+function App() {
+    return (
+        <div className="app">
+            <React.StrictMode>
+                <BrowserRouter>
+                    <Root/>
+                </BrowserRouter>
+            </React.StrictMode>
+        </div>
+    );
+}
+
+export default App;
+
+if (document.getElementById('root')) {
+    ReactDOM.render(<App />, document.getElementById('root'));
+}
