@@ -1,6 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
+import Demo from './test/Demo';
+
 function App() {
     return (
         <div className="container">
@@ -10,6 +12,8 @@ function App() {
                         <div className="card-header">App Component</div>
 
                         <div className="card-body">I'm an app component!</div>
+
+                        <Demo />
                     </div>
                 </div>
             </div>
