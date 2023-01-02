@@ -20,13 +20,11 @@ require('./bootstrap');
 
 function App() {
     return (
-        <div className="app">
-            <React.StrictMode>
-                <BrowserRouter>
-                    <Root/>
-                </BrowserRouter>
-            </React.StrictMode>
-        </div>
+        <React.StrictMode>
+            <BrowserRouter>
+                <Root/>
+            </BrowserRouter>
+        </React.StrictMode>
     );
 }
 

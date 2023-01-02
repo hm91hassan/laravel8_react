@@ -5,11 +5,10 @@ import Master from './Master';
 
 
 
-
-
 function App() {
     return (
         <div className="app">
+
             <BrowserRouter>
                 <Master/>
             </BrowserRouter>
